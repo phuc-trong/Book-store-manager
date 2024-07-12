@@ -1,0 +1,105 @@
+.text{
+    color: #000;
+    text-align: center;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 0.3125rem;
+    background: #BB8377;
+    width: 26.25rem;
+    height: 4.41513rem;
+}
+.box1{
+    width: 75.25rem;
+    height: 22.1875rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    background: #EDE9D0;
+}
+.status{
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.waiting{
+    color: #DBBE24;    
+}
+.preparing{
+    color: #5151cf;
+}
+.completed{
+    color: #48B936;
+}
+.rejected{
+    color: red;
+}
+.cancelled{
+    color: grey;
+}
+.btnUpdate{
+
+    width: 9.625rem;
+
+}
+.btnUpdate button{
+    border-radius: 1.0625rem;
+    background: #057200;
+    width: 9.625rem;
+    height: 3.13975rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+}
+.customer-info{
+    flex-shrink: 0;
+    color: #000;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.order-detail{
+    flex-shrink: 0;
+    width: 75.25rem;
+}
+.table thead, .total{
+    background: #56423D;
+    color: white;
+}
+.table tbody{
+    background: #EDE9D0;
+}
+.btnBack{
+    width: 11.875rem;
+
+}
+.btnBack button{
+    width: 11.875rem;
+    height: 3.3125rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    border-radius: 1.4375rem;
+    background: #D61D1D;
+    border: none;
+}
+.order-status{
+    flex-shrink: 0;
+}
+.result{
+    border-radius: 1rem;
+    width: 33rem;
+    color: white;
+    background: burlywood;
+    font-family: sans-serif;
+}

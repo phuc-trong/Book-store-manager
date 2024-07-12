@@ -1,0 +1,93 @@
+.title {
+  display: flex;
+  width: 26.25rem;
+  height: 4.4375rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: #BB8377;
+  color: #000;
+  text-align: center;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.customer-info {
+  width: 54rem;
+  height: 40rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  border: 1px solid #000;
+  background: #FFF4EE;
+}
+
+.info-items {
+  display: flex;
+  width: 13.75rem;
+  height: 3.625rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  border-radius: 0.4375rem;
+  border: 1px solid #000;
+  background: #EDE9D0;
+}
+
+.info-value {
+  width: 37.4375rem;
+  height: 3.625rem;
+  flex-shrink: 0;
+
+  border-radius: 0.4375rem;
+  border: 1px solid #000;
+  background: #EDE9D0;
+
+  display: flex;
+  width: 34rem;
+  height: 3.625rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: #000;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 2rem;
+}
+.table-header{
+  background: #56423D;
+  color: white;
+}
+.table-body{
+  background: #EDE9D0;
+}
+.btnBack{
+  width: 11.875rem;
+  
+}
+.btnBack button{
+  width: 11.875rem;
+  height: 3.3125rem;
+  color: #FFF;
+text-align: center;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+border-radius: 1.4375rem;
+background: #D61D1D;
+border: none;
+}

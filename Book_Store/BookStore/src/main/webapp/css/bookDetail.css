@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+.logo-tittle {
+    width: 8.4375rem;
+    height: 8.5625rem;
+    flex-shrink: 0;
+}
+
+.logo-tittle img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name-tittle {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.book-id {
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    color: #C21010;
+    font-weight: 800;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.user-info small {
+    text-align: left;
+    color: #888;
+}
+
+
+/* Set the background color for the entire page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container-i {
+    display: flex;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Sidebar Styles */
+aside {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Thiết lập cho thanh sidebar */
+.Campus {
+    color: #C21010;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    font-family: Arial, sans-serif;
+
+}
+
+.Munchines {
+    color: #ffffff;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    padding-top: 20px;
+}
+
+.sidebar .logo-side {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.sidebar .side-menu {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.sidebar .side-menu li {
+    margin: 10px 0;
+}
+
+.sidebar .side-menu a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+
+
+.sidebar .side-menu a:hover {
+    background-color: #C21010;
+    color: #ecf0f1;
+    border-left: 4px solid #C21010;
+    padding-left: 6px;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Main Book Detail */
+.main-book-details {
+    display: flex;
+    margin: 10px;
+}
+
+.book-detail {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+.book-img img {
+    margin: 30px 0 30px 30px;
+    width: 340px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.book-img img:hover {
+    transform: scale(1.1);
+}
+
+.book-edit {
+    text-align: center;
+    margin: 80px 0 0 8%;
+}
+
+.book-edit p:first-child {
+    font-size: 30px;
+    font-weight: 650;
+}
+
+.book-edit p:nth-child(2) {
+    font-size: 24px;
+    font-weight: 550;
+    color: #C21010;
+}
+
+.book-edit button {
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    border: none;
+    width: 46%;
+    border-radius: 10px;
+    font-size: 17px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.book-edit button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+
+.book-edit button:nth-child(3) {
+    background-color: #23befc;
+    margin-right: 4px;
+}
+
+.book-edit button:nth-child(4) {
+    background-color: #C21010;
+    margin-left: 4px;
+}
+
+.book-info-detail {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.book-info-detail h2 {
+    margin-bottom: 20px;
+}
+
+.book-info-detail p {
+    font-size: 20px;
+}
+
+.btn-add-product {
+    display: flex;
+    text-align: center;
+}
+
+.btn-add-product button {
+    margin: 15px;
+    padding: 12px;
+    color: white;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    background-color: #5ace56;
+}
+
+.btn-add-product button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+
+}
+
+/* Menu Styles */
+.list-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-menu li {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.name-book {
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.book-info {
+    color: #C21010;
+    font-weight: 500;
+}
+
+.book-btn {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+
+}
+
+.book-btn button {
+    padding: 10px;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+
+}
+
+.book-btn button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+
+.book-btn button:first-child {
+    background-color: #23befc;
+    margin-right: 5px;
+}
+
+.book-btn button:nth-child(2) {
+    background-color: #C21010;
+    margin-left: 5px;
+}
+
+.list-menu {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.best-seller{
+  flex: 0 0 calc(25% - 20px);
+  /* Sử dụng calc để tính toán chiều rộng và trừ đi margin */
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.book {
+  flex: 0 0 calc(25% - 20px);
+  /* Sử dụng calc để tính toán chiều rộng và trừ đi margin */
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.name-book {
+  font-weight: 600;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 5px;
+  color: #000;
+}
+
+.book-info {
+  color: #C21010;
+  font-weight: 500;
+}
+
+.book-btn {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+
+}
+
+.book-btn button {
+  padding: 10px;
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+
+}
+
+.book-btn button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+
+}
+
+.book-btn button:first-child {
+  background-color: #23befc;
+  margin-right: 5px;
+}
+
+.book-btn button:nth-child(2) {
+  background-color: #C21010;
+  margin-left: 5px;
+}
+
+.list-menu {
+  overflow: hidden;
+}
+
+.list-menu img {
+  object-fit: contain;
+  width: 95%;
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.list-menu img:hover {
+  transform: scale(1.1);
+}
+
+.bold-numbers {
+    font-weight: bold;
+    color: #C21010;
+}
+
+.price-section p {
+  display: inline; /* Hiển thị các phần tử p cùng một hàng */
+  margin-right: 5px; /* Khoảng cách giữa các phần tử p */
+}
+
+.original-price {
+    text-decoration: line-through; /* Gạch ngang văn bản */
+    color: gray; /* Đổi màu chữ thành xám */
+}
+
+.discounted-price {
+    font-size: 19px; /* Để làm nổi bật giá giảm */
+    /* Các thuộc tính khác tùy thuộc vào yêu cầu thiết kế cụ thể khác */
+}
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container-i {
+        flex-direction: column;
+    }
+
+
+
+    .right-section {
+        margin-left: 0;
+    }
+
+}
+

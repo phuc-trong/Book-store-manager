@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+header.sticky{
+  background: #000000;
+  opacity: 0.9;
+  padding: 15px 0px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky #logo{
+  color: #ffffff;
+
+}
+
+header.sticky #main-menu a{
+  color: #ffffff;
+}
+
+.inner-header {
+  display: flex;
+  align-items: center;
+}
+
+#logo{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.Campus{
+  color: #C21010;
+}
+
+#main-menu{
+  display: flex;
+  /*margin-left: 450px;*/
+
+}
+
+#main-menu a {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: #333;
+  display: block;
+  font-weight: bold;
+}
+
+#main-menu li{
+  position: relative;
+}
+
+#main-menu ul.sub-menu{
+  position: absolute;
+  padding: 15px 0;
+  list-style: none;
+  width: 200px;
+  display: none;
+}
+
+#main-menu li:hover ul.sub-menu{
+  display: block;
+}
+
+header.sticky .sub-menu{
+  height: 140px;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+#main-menu ul.sub-menu a{
+  padding: 8px 15px;
+  border-bottom: 1px solid #7a7979;
+}
+
+#main-menu ul.sub-menu li:hover a{
+  border-bottom: 1px solid #C21010;
+}
+
+#main-menu>li>a{
+  position: relative;
+}
+
+#main-menu>li>a::before {
+  content: "";
+  height: 3px;
+  width: 0px;
+  background: #C21010;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0; 
+  transition: width 0.25s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu>li:hover>a::before {
+  width: 100%; 
+  opacity: 1; 
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+header .sub-menu{
+  height: 140px;
+  background-color: #FFF;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.search {
+    width: 40em;
+    /* min-width: 332px; */
+}
+.searchText {
+    color: #968989;
+    /* font-family: Inter; */
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+
+}
+
+.searchText input {
+    min-width: 267px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 0.8125rem 0 0 0.8125rem;
+    background: #D9D9D9;
+    border: none;
+}
+
+.searchButton button {
+    padding: 0.5rem 1rem;
+    /* font-family: Inter; */
+    background: #ff7c7c;
+    color: #FEFEFE;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 0 0.8125rem 0.8125rem 0;
+}
+.searchButton button:hover {
+    background: #C21010;
+}
+
+

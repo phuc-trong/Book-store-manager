@@ -1,0 +1,18 @@
+.logo {
+    width: 8.4375rem;
+    height: 8.5625rem;
+    flex-shrink: 0;
+}
+
+.logo img {
+    object-fit: contain;
+    width: 100%;
+}
+.footer{
+    background-color: #262626;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: #4D4D4D;
+}

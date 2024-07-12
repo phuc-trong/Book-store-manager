@@ -1,0 +1,48 @@
+.loginBox {
+    border-radius: 2.25rem;
+    border: 0.5px solid #000;
+    background: #FFF;
+    min-width: 266px;
+}
+
+.phone,
+.password {
+    border: none;
+    width: 100%;
+}
+
+.phone input,
+.password input {
+    border-radius: 0.875rem;
+    border: 0.5px solid #000;
+    background: #FFF;
+    width: 100%;
+}
+
+.title {
+    color: #000;
+    text-align: center;
+    font-size: 1.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btnLogin button{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    border-radius: 0.75rem;
+    background: #ff7c7c;
+}
+.btnLogin button:hover{
+    background: #C21010;
+}
+div a{
+    text-decoration: none;
+    color: #4D4D4D;
+}

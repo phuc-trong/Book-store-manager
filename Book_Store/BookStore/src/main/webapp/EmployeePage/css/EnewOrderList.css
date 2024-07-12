@@ -1,0 +1,40 @@
+.table {
+  color: white;
+  border: 2px solid black;
+}
+
+.table thead {
+  background-color: #56423D;
+}
+
+.table tbody {
+  background-color: #EDE9D0;
+  color: black;
+}
+
+.title {
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 26.0625rem;
+  border-radius: 0.3125rem;
+  background: #BB8377;
+}
+.search{
+    /* padding: 10px; */
+    background-color: #fff;
+    border-radius: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    transition: var(--img-transition);
+    z-index: 50;
+    cursor: pointer;
+    color: #FFB23E;
+    height: 27px;
+    width: 27px;
+    background-color: rgba(217, 217, 217, 0.40);
+}

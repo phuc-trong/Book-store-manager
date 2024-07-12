@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+.logo-tittle {
+    width: 8.4375rem;
+    height: 8.5625rem;
+    flex-shrink: 0;
+}
+
+.logo-tittle img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name-tittle {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.user-info small {
+    text-align: left;
+    color: #888;
+}
+
+
+/* Set the background color for the entire page */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-i {
+    display: flex;
+}
+/*
+ Sidebar Styles 
+aside {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+ Thiết lập cho thanh sidebar 
+.Campus {
+    color: #C21010;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    font-family: Arial, sans-serif;
+}
+
+.Munchines {
+    color: #ffffff;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    padding-top: 20px;
+}
+
+.sidebar .logo-side {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.sidebar .side-menu {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.sidebar .side-menu li {
+    margin: 10px 0;
+}
+
+.sidebar .side-menu a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+
+
+.sidebar .side-menu a:hover {
+    background-color: #C21010;
+    color: #ecf0f1;
+    border-left: 4px solid #C21010;
+    padding-left: 6px;
+}*/
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Order Management Styles */
+.orders-table {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.order-list {
+    margin-bottom: 20px;
+}
+
+.select-box{
+    margin-bottom: 20px;
+    padding: 0 20px 0 15px;
+    border-radius: 10px;
+    width: 16%;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+}
+
+.select-box option{
+    font-size: 16px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 320px;
+    font-size: 16px;
+}
+
+.search-main {
+    display: flex;
+}
+
+.search-button:hover {
+    background-color: #C21010;
+}
+
+.status {
+    color: rgb(27, 230, 0);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #C21010;
+    color: #fff;
+    cursor: pointer;
+}
+
+th,
+td {
+    font-weight: 600;
+    font-size: larger;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#itemList {
+    list-style: none;
+    padding: 0;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button{
+    padding: 8px;
+    border-radius: 5px;
+    width: 130px;
+    font-size: 17px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+button:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+
+button:first-child{
+    margin-left: 20%;
+    margin-right: 5px;
+    background-color: rgb(37, 182, 204);
+    color: white;
+}
+
+button:nth-child(2){
+    margin-left: 5px;
+    background-color: #C21010;
+    color: white;
+}
+
+
+.btn-pagination button {
+    font-size: 50px;
+    width: 70px;
+    border: none;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container-i {
+        flex-direction: column;
+    }
+
+
+
+    .right-section {
+        margin-left: 0;
+    }
+}

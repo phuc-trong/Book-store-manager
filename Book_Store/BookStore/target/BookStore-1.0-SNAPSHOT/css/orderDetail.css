@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+.logo-tittle {
+    width: 8.4375rem;
+    height: 8.5625rem;
+    flex-shrink: 0;
+}
+
+.logo-tittle img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name-tittle{
+    text-align: center;
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.order-id{
+    font-size: 2rem;
+    text-align: center;
+    color: #C21010;
+    font-weight: 800;
+}
+
+.status{
+    font-size: 2rem;
+    text-align: center;
+    color: #28c210;
+    font-weight: 700;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.user-info small {
+    text-align: left;
+    color: #888;
+}
+
+
+/* Set the background color for the entire page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container-i {
+    display: flex;
+}
+
+/* Sidebar Styles */
+aside {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Thiết lập cho thanh sidebar */
+.Campus{
+    color: #C21010;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    font-family: Arial, sans-serif;
+
+}
+
+.Munchines{
+    color: #ffffff;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    padding-top: 20px;
+}
+
+.sidebar .logo-side {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.sidebar .side-menu {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.sidebar .side-menu li {
+    margin: 10px 0;
+}
+
+.sidebar .side-menu a {
+
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+
+
+
+.sidebar .side-menu a:hover {
+
+    background-color: #C21010;
+    color: #ecf0f1;
+    border-left: 4px solid #C21010;
+    padding-left: 6px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Order Book Information Styles */
+.orders-table {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+td:first-child{
+    width: 20%;
+}
+
+td:nth-child(2){
+    text-align: left;
+}
+
+.book-info img{
+    object-fit: contain;
+    width: 120px;
+    display:inline-block;
+}
+.order-list{
+    margin-bottom: 20px;
+}
+
+.status{
+    color: rgb(27, 230, 0);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #C21010;
+    color: #fff;
+}
+
+th, td {
+    font-weight: 600;
+    font-size: larger;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc ;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.total-order{
+    padding-top: 20px;
+    padding-left: 76%;
+    font-size: 22px;
+    font-weight: 800;
+    color: #C21010;
+}
+/* other information */
+.other-info{
+    display: flex;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.other-info p{
+    font-size: 18px;
+}
+
+.other-info li{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    margin: 10px;
+}
+
+.header-info{
+    display: flex;
+}
+
+.header-info a{
+    padding-left: 60%;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.other-info h2{
+    padding-bottom: 15px;
+}
+
+.bold-numbers {
+    font-weight: bold;
+    color: #C21010;
+}
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container-i {
+        flex-direction: column;
+    }
+
+
+
+    .right-section {
+        margin-left: 0;
+    }
+}
+

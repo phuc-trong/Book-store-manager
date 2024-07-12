@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Style */
+.logo-tittle {
+  width: 8.4375rem;
+  height: 8.5625rem;
+  flex-shrink: 0;
+}
+
+.logo-tittle img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.name-tittle {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.order-id {
+  color: #000;
+  font-size: 2rem;
+  text-align: center;
+  color: #C21010;
+  font-weight: 800;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-info p {
+  margin: 0;
+}
+
+.user-info small {
+  text-align: left;
+  color: #888;
+}
+
+
+/* Set the background color for the entire page */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: gray;
+}
+
+.container-i {
+  display: flex;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Sidebar Styles */
+aside {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+/* Thiết lập cho thanh sidebar */
+.Campus {
+  color: #C21010;
+  font-size: 2.1875rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+  font-family: Arial, sans-serif;
+
+}
+
+.Munchines {
+  color: #ffffff;
+  font-size: 2.1875rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #000000;
+  padding-top: 20px;
+}
+
+.sidebar .logo-side {
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.sidebar .side-menu {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar .side-menu li {
+  margin: 10px 0;
+}
+
+.sidebar .side-menu a {
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+
+
+.sidebar .side-menu a:hover {
+  background-color: #C21010;
+  color: #ecf0f1;
+  border-left: 4px solid #C21010;
+  padding-left: 6px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Menu Styles */
+h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #C21010;
+}
+
+.list-menu {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.best-seller{
+  flex: 0 0 calc(25% - 20px);
+  /* Sử dụng calc để tính toán chiều rộng và trừ đi margin */
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.book {
+  flex: 0 0 calc(25% - 20px);
+  /* Sử dụng calc để tính toán chiều rộng và trừ đi margin */
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.name-book {
+  font-weight: 600;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 5px;
+  color: #000;
+}
+
+.book-info {
+  color: #C21010;
+  font-weight: 500;
+}
+
+.book-btn {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+
+}
+
+.book-btn button {
+  padding: 10px;
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+
+}
+
+.book-btn button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+
+}
+
+.book-btn button:first-child {
+  background-color: #23befc;
+  margin-right: 5px;
+}
+
+.book-btn button:nth-child(2) {
+  background-color: #C21010;
+  margin-left: 5px;
+}
+
+.list-menu {
+  overflow: hidden;
+}
+
+.list-menu img {
+  object-fit: contain;
+  width: 95%;
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.list-menu img:hover {
+  transform: scale(1.1);
+}
+
+.search-main {
+  display: flex;
+  margin-top: 5px;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter label{
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.select-box {
+  height: 45px;
+  margin-left: 10px;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  font-size: 16px;
+}
+
+.select-box option {
+  font-size: 16px;
+}
+
+.search-box {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 320px;
+  font-size: 16px;
+}
+
+.icon {
+  margin: 0;
+}
+
+.not-found{
+  text-align: center;
+  font-size: 30px;
+  color: #C21010;
+}
+
+.price-section p {
+  display: inline; /* Hiển thị các phần tử p cùng một hàng */
+  margin-right: 5px; /* Khoảng cách giữa các phần tử p */
+}
+
+.original-price {
+    text-decoration: line-through; /* Gạch ngang văn bản */
+    color: gray; /* Đổi màu chữ thành xám */
+}
+
+.discounted-price {
+    font-size: 19px; /* Để làm nổi bật giá giảm */
+    /* Các thuộc tính khác tùy thuộc vào yêu cầu thiết kế cụ thể khác */
+}
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .container-i {
+    flex-direction: column;
+  }
+
+
+
+  .right-section {
+    margin-left: 0;
+  }
+}

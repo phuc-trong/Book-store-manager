@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+.logo-tittle {
+    width: 8.4375rem;
+    height: 8.5625rem;
+    flex-shrink: 0;
+}
+
+.logo-tittle img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name-tittle{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.user-info small {
+    text-align: left;
+    color: #888;
+}
+
+
+/* Set the background color for the entire page */
+body {
+    background-color: gray;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container-i {
+    display: flex;
+}
+
+/* Sidebar Styles */
+aside {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Thiết lập cho thanh sidebar */
+.Campus{
+    color: #C21010;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    font-family: Arial, sans-serif;
+}
+
+.Munchines{
+    color: #ffffff;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    padding-top: 20px;
+}
+
+.sidebar .logo-side {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.sidebar .side-menu {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.sidebar .side-menu li {
+    margin: 10px 0;
+}
+
+
+.sidebar .side-menu a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+
+
+
+.sidebar .side-menu a:hover {
+    background-color: #C21010;
+    color: #ecf0f1;
+    border-left: 4px solid #C21010;
+    padding-left: 6px;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Insights Styles */
+.insights {
+    display: flex;
+    margin-top: 5px;
+}
+
+.insights li {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.insights li .bx {
+    width: 80px;
+    height: 90px;
+    border-radius: 10px;
+
+    font-size: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insights li .info {
+    display: flex;
+}
+
+.insights li .info .text h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.info h3, .info h1 {
+    margin-bottom: 10px;
+}
+/* New Users Styles */
+
+.new-users {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-list {
+    display: flex;
+    flex-wrap: nowrap; /* Không cho phép các phần tử con xuống dòng */
+    justify-content: space-between; /* Canh đều các phần tử theo chiều ngang */
+    width: 50%;
+    /* overflow-x: auto;  Cho phép cuộn ngang nếu các phần tử vượt quá chiều rộng của container */
+     margin-left: -730px; /* Di chuyển các phần tử con sang trái 10px */
+}
+
+.user {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    flex: 0 0 calc(25% - 40px); /* Đặt độ rộng cho các ô User và trừ đi khoảng cách margin */
+    max-width: calc(25% - 40px); /* Đặt độ rộng tối đa cho các ô User */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.user-list {
+    display: flex;
+}
+
+.user {
+    text-align: center;
+    padding: 0 100px 10px 100px;
+}
+
+
+/* Recent Orders Styles */
+.recent-orders {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: green;
+    color: #fff;
+}
+
+th, td {
+    font-weight: 600;
+    font-size: larger;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc ;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.show{
+    padding-top: 20px;
+}
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container-i {
+        flex-direction: column;
+    }
+
+
+
+    .right-section {
+        margin-left: 0;
+    }
+}

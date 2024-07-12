@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Style */
+.logo-tittle {
+  width: 8.4375rem;
+  height: 8.5625rem;
+  flex-shrink: 0;
+}
+
+.logo-tittle img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.name-tittle {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.order-id {
+  font-size: 2rem;
+  text-align: center;
+  color: #C21010;
+  font-weight: 800;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-info p {
+  margin: 0;
+}
+
+.user-info small {
+  text-align: left;
+  color: #888;
+}
+
+
+/* Set the background color for the entire page */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container-i {
+  display: flex;
+}
+
+/* Sidebar Styles */
+aside {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+/* Thiết lập cho thanh sidebar */
+.Campus {
+  color: #C21010;
+  font-size: 2.1875rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+  font-family: Arial, sans-serif;
+
+}
+
+.Munchines {
+  color: #ffffff;
+  font-size: 2.1875rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #000000;
+  padding-top: 20px;
+}
+
+.sidebar .logo-side {
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.sidebar .side-menu {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar .side-menu li {
+  margin: 10px 0;
+}
+
+.sidebar .side-menu a {
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+
+
+.sidebar .side-menu a:hover {
+  background-color: #C21010;
+  color: #ecf0f1;
+  border-left: 4px solid #C21010;
+  padding-left: 6px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* other information */
+.employee-details-info {
+  display: flex;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.employee-details-info li {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  margin: 10px;
+}
+
+.employee-details-info p {
+  margin-top: 20px;
+  font-size: larger;
+}
+
+.employee-details-info h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: green;
+  color: #fff;
+}
+
+th,
+td {
+  font-weight: 600;
+  font-size: larger;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-detail {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 60%;
+}
+
+.btn-detail button {
+  padding: 17px;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 17px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  color: white;
+}
+
+.btn-detail button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+
+.btn-create-acc button{
+  background-color: #0dd10d;
+  margin-right: 10px;
+}
+
+.btn-delete-cus button{
+  background-color: #C21010;
+  margin-left: 10px;
+}
+
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .container-i {
+    flex-direction: column;
+  }
+
+
+
+  .right-section {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header Style */
+  .logo-tittle {
+    width: 8.4375rem;
+    height: 8.5625rem;
+    flex-shrink: 0;
+  }
+  
+  .logo-tittle img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .name-tittle{
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .order-id{
+    font-size: 2rem;
+    text-align: center;
+    color: #C21010;
+    font-weight: 800;
+  }
+
+  .status{
+    font-size: 2rem;
+    text-align: center;
+    color: #28c210;
+    font-weight: 700;
+
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .user-info {
+    text-align: right;
+  }
+  
+  .user-info p {
+    margin: 0;
+  }
+  
+  .user-info small {
+    text-align: left;
+    color: #888;
+  }
+  
+
+  /* Set the background color for the entire page */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container-i {
+    display: flex;
+  }
+  
+  /* Sidebar Styles */
+  aside {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Thiết lập cho thanh sidebar */
+  .Campus{
+    color: #C21010;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    font-family: Arial, sans-serif;
+    
+  }
+
+  .Munchines{
+    color: #ffffff;
+    font-size: 2.1875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    padding-top: 20px;
+  }
+  
+  .sidebar .logo-side {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  
+  .sidebar .side-menu {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+  .sidebar .side-menu li {
+    margin: 10px 0;
+  }
+  
+  .sidebar .side-menu a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+  }
+
+
+
+  .sidebar .side-menu a:hover {
+    background-color: #C21010;
+    color: #ecf0f1;
+    border-left: 4px solid #C21010;
+    padding-left: 6px;
+  }
+ 
+
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Order Book Information Styles */
+  .book-info{
+    display: flex;
+  }
+
+  .left-info{
+    margin-left: 5%;
+  }
+
+  .right-info{
+    margin-left: 12%;
+  }
+
+  h2{
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  .book-info li {
+    list-style-type: none;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+
+  .book-info label{
+    color: #C21010;
+    font-weight: 500;
+    font-size: 19px;
+  }
+
+  .book-info input[type=text]{
+    padding: 10px;
+    margin-left: 2px;
+    margin-right: 12px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+  }
+
+  .book-info input[type=number]{
+    padding: 10px;
+    margin-left: 2px;
+    margin-right: 12px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+  }
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+  .upload{
+    margin: 20px 8%;
+  }
+
+  .upload button{
+    font-size: 17px;
+    width: 160px;
+    padding: 15px;
+    border: none;
+    color: white;
+    background-color: #06c2cf;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  }
+
+  .upload button:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  }
+
+  .left-info li:nth-child(6){
+    width: 60%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+
+  .left-info li:nth-child(6) img{
+    width: 100%;
+    height: 200px;
+  }
+
+  .left-info li:nth-child(5) input{
+    display: none;
+  }
+
+  .right-info li:first-child select{
+    width: 50%;
+    height: 40px;
+  }
+
+  .right-info li:nth-child(3) select{
+    width: 50%;
+    height: 40px;
+  }
+
+  .select-box{
+    margin-left: 10px;
+    padding: 0 30px 0 15px;
+    border-radius: 10px;
+    width: 15%;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+  }
+
+  .select-box option{
+    font-size: 15px;
+  }
+
+  .right-info li:nth-child(2) textarea{
+    vertical-align: middle;
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .right-info li:nth-child(4){
+    display: none;
+  }
+
+  .btn-product{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 17%;
+  }
+
+  .btn-product button{
+    padding: 17px;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 17px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  }
+
+  .btn-product button:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  }
+
+  .btn-add-product button{
+    margin-right: 10px;
+    background-color: #5ace56;
+    color: white;
+  }
+  
+  .btn-cancel-product button{
+    margin-left: 10px;
+    background-color: #C21010;
+    color: white;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+  }
+ 
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    .container-i {
+      flex-direction: column;
+    }
+  
+   
+  
+    .right-section {
+      margin-left: 0;
+    }
+  }
